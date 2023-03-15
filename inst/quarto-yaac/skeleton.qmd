@@ -1,0 +1,130 @@
+---
+title: YAAC-CV
+format:
+  quarto-yaac-pdf:
+    color: monochrome #green, red, indigo, orange, monochorome
+    ptsize: 10pt #10pt, 11pt, 12pt
+firstname: William
+lastname: Gosset
+tagline: Brewmaster and Student
+#linkedin: optional linkedin username
+#website-name: quarto.org # optional website name
+#website-address: quarto.org # optional website address
+#github: github #optional github username
+smartphone: 1-(234)-567-8901
+email: guinness@customer-care.net
+address: Guinness Brewery · Park Royal · London NW10 7RR, UK
+#infos: optional additional info 
+photo: resources/William_Sealy_Gosset # optional photo
+date: last-modified
+nocite: '@*'
+bibliography: "peer_bib.bib"
+csl: apa-cv.csl
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    results: asis
+---
+
+```{r setup}
+library(quartoYAAC)
+```
+
+<!-- 
+Use the class `.sectiontitle` to format first level headings
+Use .fa<Font> to insert a fontawesome icon, a list of 
+icons are included: http://mirrors.ctan.org/fonts/fontawesome5/doc/fontawesome5.pdf
+-->
+
+# Skills {.sectiontitle .faTasks}
+
+```{r}
+
+df <- data.frame(
+  "id" = c("Brewing", "Statistics"),
+  "text" = c("Barley, Chemistry, Stouts",
+             "Experimental Design, Uncertaintity, t-test")
+)
+
+print_skills_block(df)
+```
+
+
+# Experience {.sectiontitle .faSuitcase}
+
+<!--The yaac document class provides an `experiences` environment: -->
+
+```{r}
+
+df <- data.frame(
+  enddate = c("current", "1935"),
+  positiontitle = c("position", "Experimental Brewer"),
+  institution = c("Organization", "Guinness \\& Son"),
+  location = c("location", "Dublin"),
+  startdate = c("1936", "1899"),
+  description_bullets = c("\\item I did amazing stuff \\item Here are some KPIs \\item Here are some impacts", "\\item Designed and published agriculture and chemistry experiements. \\item Developed and published important statistical methods."),
+  skilltag = c("skill1, skill2, skill3",
+               "parametric methods, experimental design, Student's tables")
+  
+)
+
+print_experience_block(df)
+```
+
+
+# Education {.sectiontitle .faGraduationCap}
+
+
+```{r}
+
+x <- data.frame(end_date = c("Graduation Date", "1899"),
+                degree = c("Degree", "Mathematics and Chemistry"),
+                institution = c("Institution", "New College Oxford"))
+
+print_education_block(x)
+```
+
+# Selected Peer-Reviewed Publications {.sectiontitle .faFile}
+
+:::{#refs}
+:::
+
+
+# Software Projects {.sectiontitle .faLaptop}
+
+
+```{r}
+
+x <- data.frame(
+  project_name = c("quarto","YAAC Another Awesome CV"),
+  dates = c("2020 - current", "2013 - 2018"),
+  links = c("\\github{quarto-dev/quarto-cli} \\website{https://quarto.org}{https://quarto.org}",
+            "\\github{darwiin/yaac-another-awesome-cv} \\website{https://www.overleaf.com/latex/templates/awesome-source-cv/wrdjtkkytqcw}{Template sur Overleaf}"),
+  description = c("Open-source scientific and technical publishing system built on Pandoc.",
+                  "Template \\LaTeX pour Curiculum Vitæ utilisant les icônes \\href{https://fontawesome.com}{Font Awesome} et la police de caractère \\href{https://fonts.google.com/specimen/Source+Sans+Pro}{Adobe Source Sans Pro}. YAAC Another Awesome CV a d'abord été créé comme un template simple pour CV à vocation technologique."),
+  tags = c("R,Python,Julia,Observable,\\LaTeX",
+           "\\LaTeX,Sublime Text")
+)
+
+print_project_block(x)
+```
+
+
+# References {.sectiontitle .faQuoteLeft}
+
+```{r}
+
+x <- data.frame(name = c("Jerzy Neyman",
+                         "Karl Pearson"),
+                title = c("Professor",
+                          "Professor"),
+                institute = c("University College",
+                              "Gresham College"),
+                email = c("jn@compuserve.com",
+                          "kp@compuserve.com"),
+                phone = c("+687 987 654",
+                          "+687 987 654"))
+
+print_referee_block(x)
+```
