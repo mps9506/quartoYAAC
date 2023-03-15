@@ -1,11 +1,16 @@
 Package: quartoYAAC
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R Interface to the 'quarto-yaac' Template
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Authors@R: 
+    person(given = "Michael", 
+           family = "Schramm", 
+           role = c("aut", "cre"), 
+           email = "mpschramm@gmail.com", 
+           comment = c(ORCID = "0000-0003-1876-6592"))
+Description: Provides convienence functions to add the 'quarto-yaac' template 
+  to an R project and includes functions for creating Latex formatted text 
+  blocks that work with the underlying document class.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
@@ -15,3 +20,4 @@ Imports:
   glue,
   rlang,
   rstudioapi
+SystemRequirements: Quarto command line tools (https://github.com/quarto-dev/quarto-cli).
