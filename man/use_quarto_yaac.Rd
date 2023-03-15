@@ -13,5 +13,6 @@ use_quarto_yaac(file_name = NULL, overwrite_qmd = TRUE)
 a message if extension was successfully copied over
 }
 \description{
-Adds a subdirectory and necessary files to use the Quarto-YAAC \url{https://github.com/mps9506/quarto-yaac} template.
+Adds a subdirectory and necessary files to use the Quarto-YAAC
+\url{https://github.com/mps9506/quarto-yaac} template.
 }
