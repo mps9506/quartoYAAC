@@ -11,9 +11,8 @@ Authors@R:
 Description: Provides convienence functions to add the 'quarto-yaac' template 
   to an R project and includes functions for creating Latex formatted text 
   blocks that work with the underlying document class.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 RoxygenNote: 7.2.2
 Imports: 
   cli,
