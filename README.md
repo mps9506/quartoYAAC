@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![R-CMD-check](https://github.com/mps9506/quartoYAAC/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mps9506/quartoYAAC/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 quartoYAAC provides a convenience function for adding the
