@@ -9,8 +9,7 @@
 #' @export
 #' @import fs
 #' @import cli
-use_quarto_yaac <- function(file_name = NULL,
-                            overwrite_qmd = TRUE) {
+use_quarto_yaac <- function(file_name = NULL) {
 
   ## check file name (probably check is character also)
   if (is.null(file_name)) {

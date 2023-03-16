@@ -4,7 +4,7 @@
 \alias{use_quarto_yaac}
 \title{Use the Quarto-YAAC template}
 \usage{
-use_quarto_yaac(file_name = NULL, overwrite_qmd = TRUE)
+use_quarto_yaac(file_name = NULL)
 }
 \arguments{
 \item{file_name}{Name of new qmd file and sub-directory to be created}
